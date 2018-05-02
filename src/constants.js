@@ -1,7 +1,8 @@
-import keykey from 'keykey';
-
 // Action types of the library
-export default keykey([
+const actionTypes = {};
+
+// Format the elements
+[
   'API_SET_AXIOS_CONFIG',
   'API_HYDRATE',
   'API_WILL_CREATE',
@@ -16,4 +17,6 @@ export default keykey([
   'API_WILL_DELETE',
   'API_DELETED',
   'API_DELETE_FAILED'
-]);
+].forEach(action => { actionTypes[action] = action; });
+
+export default actionTypes;
